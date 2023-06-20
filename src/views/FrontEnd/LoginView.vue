@@ -1,4 +1,5 @@
 <template>
+  <teleport to="title">｜登入</teleport>
   <div class="container mt-5">
     <VueLoading :active="isLoading" :z-index="1060"></VueLoading>
     <form class="row justify-content-center">

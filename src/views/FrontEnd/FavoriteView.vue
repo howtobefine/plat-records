@@ -1,4 +1,5 @@
 <template>
+  <teleport to="title">｜收藏列表</teleport>
   <!-- banner -->
   <div class="container-fluid">
     <div class="row">

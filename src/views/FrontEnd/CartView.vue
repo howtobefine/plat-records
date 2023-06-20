@@ -1,4 +1,5 @@
 <template>
+  <teleport to="title">｜購物車</teleport>
   <!-- banner -->
   <div class="container-fluid">
     <div class="row">

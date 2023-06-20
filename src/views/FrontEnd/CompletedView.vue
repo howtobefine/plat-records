@@ -1,4 +1,5 @@
 <template>
+  <teleport to="title">｜完成付款</teleport>
   <!-- banner -->
   <div class="container-fluid">
     <div class="row">
