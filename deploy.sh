@@ -25,6 +25,6 @@ git commit -m 'deploy'
 
 # if you are deploying to https://howtobefine.github.io/plat-records
 # git push -f git@github.com:howtobefine/plat-records.git main:gh-pages
-git push -f https://github.com/howtobefine/plat-records main:gh-pages
+git push -f https://github.com/howtobefine/plat-records.git main:gh-pages
 
 cd -

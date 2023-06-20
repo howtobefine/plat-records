@@ -164,9 +164,18 @@
                 <div class="d-flex gap-lg-3">
                   <button
                     type="button"
-                    class="btn btn-outline-info border-dark bg-light bg-opacity-75 border-icon hvr-grow mb-2 me-2 mb-lg-0 me-lg-0"
+                    class="btn btn-outline-info border-dark bg-light bg-opacity-75 border-icon hvr-grow mb-2 me-2 mb-lg-0 me-lg-0 p-0"
                   >
-                    <i class="bi bi-heart text-dark"></i>
+                    <i
+                      class="bi bi-heart-fill text-dark px-icon"
+                      v-if="isFavorite(product)"
+                      @click.prevent="toggleFavorite(product)"
+                    ></i>
+                    <i
+                      class="bi bi-heart text-dark px-icon"
+                      v-else
+                      @click.prevent="toggleFavorite(product)"
+                    ></i>
                   </button>
                   <button
                     type="button"
