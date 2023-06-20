@@ -1,0 +1,138 @@
+// swiper 參數
+:root {
+    --swiper-pagination-color: #CB4042;
+    --swiper-pagination-bullet-size: 12px;
+    --swiper-pagination-bullet-horizontal-gap: 6px;
+    --swiper-navigation-color: white;
+    --swiper-navigation-size: 20px !important;
+    --ck-z-default: 100 !important;
+    --ck-z-modal: calc(var(--ck-z-default) + 999) !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 30px;
+    opacity: 0;
+    transition: all .3s;
+}
+
+.swiper-button-prev {
+    margin-left: -10px;
+}
+
+.swiper-button-next {
+    margin-right: -10px;
+}
+
+
+.img-cover {
+    object-fit: cover;
+}
+
+.text-shadow {
+    text-shadow: $dark 0.1em 0.1em 0.2em
+}
+
+.hvr-light:hover {
+    transition: all .3s;
+    color: #adb5bd !important;
+}
+
+.title-border-dark::after {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    bottom: 28px;
+    left: 50%;
+    background-color: black;
+    width: 13%;
+    height: 1px;
+
+    @media(max-width:992px) {
+        width: 16%;
+    }
+
+    @media(max-width:768px) {
+        width: 22%;
+    }
+
+    @media (max-width:576px) {
+        width: 25%;
+    }
+}
+
+.title-border-light::after {
+    content: '';
+    position: absolute;
+    transform: translate(-50%, -50%);
+    bottom: 28px;
+    left: 50%;
+    background-color: white;
+    width: 13%;
+    height: 1px;
+
+    @media(max-width:992px) {
+        width: 16%;
+    }
+
+    @media(max-width:768px) {
+        width: 22%;
+    }
+
+    @media (max-width:576px) {
+        width: 25%;
+    }
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.brightness-filter {
+    filter: brightness(85%);
+}
+
+.font-space {
+    letter-spacing: 2px;
+}
+
+.lh-xl {
+    line-height: 3;
+}
+
+.z-index-max {
+    z-index: 2000;
+}
+
+.w-20 {
+    width: 20% !important;
+}
+
+.px-icon {
+    padding: 8px 12px;
+
+    ::before {
+        display: block;
+    }
+}
+
+.cursor-pointer {
+    cursor: pointer;
+}
+
+.border-icon {
+    border: 1px solid #1c1c1c;
+
+    @media(max-width:992px) {
+        border: transparent;
+    }
+}
+
+.swal-position {
+    top: 56px !important;
+    right: 0 !important;
+}
