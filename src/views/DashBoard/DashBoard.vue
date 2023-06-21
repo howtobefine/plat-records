@@ -62,7 +62,6 @@ export default {
       this.$http
         .post(url)
         .then((res) => {
-          console.log(res)
           Toast.fire({
             icon: 'success',
             title: `${res.data.message}`
