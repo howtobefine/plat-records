@@ -81,6 +81,10 @@
         </swiper>
       </div>
     </div>
+    <button type="button" @click="myTestError()">test</button>
+    <button type="button" @click="myTestError()">test2</button>
+    <button type="button" @click="myTestError()">test3</button>
+
   </div>
 </template>
 
