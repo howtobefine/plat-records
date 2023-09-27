@@ -30,9 +30,7 @@
         </div>
         <div class="d-flex justify-content-between mt-5">
           <router-link to="/" class="btn btn-success">回前台首頁</router-link>
-          <button class="btn btn-danger" type="button" @click="login">
-            登入
-          </button>
+          <button class="btn btn-danger" type="button" @click="login">登入</button>
         </div>
       </div>
     </form>
@@ -56,7 +54,7 @@ export default {
   methods: {
     login() {
       this.isLoading = true
-      const url = `${VITE_API}admin/signin`
+      const url = `${VITE_API}admin/signinnn`
       this.$http
         .post(url, this.user)
         .then((res) => {
@@ -74,6 +72,7 @@ export default {
             icon: 'error',
             title: `${err.response.data.message}`
           })
+          this.isLoading = false
         })
     }
   }
